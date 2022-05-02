@@ -23,7 +23,7 @@ const Orders = (props) => {
         {orders.map((order) => (
           <tr key={order._id}>
             <td>
-              <b>{order.user.name}</b>
+              <b>{order.user.firstName} {order.user.lastName}</b>
             </td>
             <td>{order.user.email}</td>
             <td>${order.totalPrice}</td>
